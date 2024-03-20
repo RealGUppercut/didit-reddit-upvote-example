@@ -1,5 +1,9 @@
 import { PostList } from "../components/PostList";
 
 export default async function Home() {
-  return <PostList />;
+  try {
+    return <PostList />;
+  } catch (error) {
+    console.error("NOT WORKING");
+  }
 }
